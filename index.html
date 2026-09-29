@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: rgb(238, 238, 238);
+        }
         header{
             background-color: blue;
             color: white;
@@ -25,9 +28,26 @@
         }
         .zogolovok{
             display: flex;
+            align-items: center;
             justify-content: center;
             color: black;
             flex-direction: column;
+        }
+        .cards{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .card{
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            width: 500px;
+            height: 300px;
+            border-radius: 5%;
+            padding: 30px;
         }
     </style>
 </head>
@@ -42,6 +62,26 @@
             <p>Практика</p>
         </nav>
     </header>
-    <zogolovok></zogolovok>
+    <div class = "zogolovok">
+        <h1>Изучаем Flexbox</h1>
+        простая страница для студентов, которые толко начинают изучать Flexbox
+    </div>
+    <div class="cards">
+        <div class="card">
+            <h1 style="color: blue;">display: flex</h1>
+            <h2>Превращаетэлемент в flex-контейнер. Его дочерние элементы становятся flex-элементами.</h2>
+            <h3 style="background-color: rgb(223, 223, 223); border-radius: 5px; height: 40px; display: flex; align-items: center; padding: 10px;">display: flex;</h3>
+        </div>
+        <div class="card">
+            <h1 style="color: blue;">justify-content</h1>
+            <h2>Управляет расположением элементов по главной оси.</h2>
+            <h3 style="background-color: rgb(223, 223, 223); border-radius: 5px; height: 40px; display: flex; align-items: center; padding: 10px;">justify-content: center;</h3>
+        </div>
+        <div class="card">
+            <h1 style="color: blue;">align-items</h1>
+            <h2>Управляет расположением элементов по поперечной оси</h2>
+            <h3 style="background-color: rgb(223, 223, 223); border-radius: 5px; height: 40px; display: flex; align-items: center; padding: 10px;">align-items: center;</h3>
+        </div>
+    </div>
 </body>
 </html>
