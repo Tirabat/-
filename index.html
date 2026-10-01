@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body{
-            background-color: rgb(238, 238, 238);
+            background-color: rgb(245, 243, 243);
         }
         header{
             background-color: blue;
             color: white;
             display:flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
+            padding: 10px;
 
         }
         .logo{
@@ -32,6 +38,7 @@
             justify-content: center;
             color: black;
             flex-direction: column;
+            margin-top: 40px;
         }
         .cards{
             display: flex;
@@ -48,21 +55,46 @@
             height: 300px;
             border-radius: 5%;
             padding: 30px;
+            gap: 20px;
+            box-shadow: 0 10px 10px rgba(128, 128, 128, 0.144);
         }
         .teams{
             display: flex;
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 30px;   
         }
         .team{
-            width: 1500px;
-            height: 500px;
+            width: 1565px;
+            height: 400px;
             background-color: white;
+            display: flex;      
+            flex-direction: column;
+            border-radius: 20px;
+            justify-content: end;  
+            padding: 50px 50px;
+            gap: 40px;
+        }
+        .taem{
+            background-color: rgba(203, 203, 255, 0.821);
+            width: 1465px;
+            height: 250px;
+            display: flex;      
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 40px;
+            margin: auto;
+            border-radius: 10px;   
+        }
+        footer{
+            background-color: black;
+            margin-top: 50px;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 20px;
-        }
+            padding: 20px;  
+        }   
     </style>
 </head>
 <body>
@@ -99,8 +131,15 @@
     </div>
     <div class="teams">
         <div class="team">
-            fjejngj
+            <h1>Пример Flexbox</h1>
+            <h2>Ниже три элемента расположены с помощью Flexbox:</h2>   
+            <div class="taem">
+                <h1 style="background-color: rgb(78, 56, 246); color: white; height: 100px; width: 100px; display: flex; justify-content: center; align-items: center; border-radius: 10px;">1</h1>
+                <h1 style="background-color: rgb(78, 56, 246); color: white; height: 100px; width: 100px; display: flex; justify-content: center; align-items: center; border-radius: 10px;">2</h1>
+                <h1 style="background-color: rgb(78, 56, 246);color: white; height: 100px; width: 100px; display: flex; justify-content: center; align-items: center; border-radius: 10px;">3</h1>       
+            </div> 
         </div>
-    </div>
-</body>
-</html>
+    </div> 
+    <footer>FlexStudy – изучаем Flexbox шаг за шагом</footer>   
+</body> 
+</html> 
